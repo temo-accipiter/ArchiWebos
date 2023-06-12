@@ -238,9 +238,23 @@ nav li a {
 	height: 135px;
 }
 .filterButtons {
+	display: flex;
+	justify-content: space-between;
 	width: 600px;
 	margin: auto;
 	margin-bottom: 40px;
+}
+.filterButtons :nth-child(1) {
+	width: 100px;
+}
+.filterButtons :nth-child(2) {
+	width: 100px;
+}
+.filterButtons :nth-child(3) {
+	width: 160px;
+}
+.filterButtons :nth-child(4) {
+	width: 190px;
 }
 #contact {
 	position: relative;
@@ -265,7 +279,9 @@ nav li a {
 	font-size: 1.2em;
 	border: none;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	cursor: pointer;
 }
+
 #contact label {
 	margin: 2em 0 1em 0;
 }
@@ -314,7 +330,7 @@ footer nav ul {
 }
 /*********** MODAL **************/
   
-  .modal-container {
+  .modalContainer {
 	visibility: hidden;
 	position: fixed;
 	top: 0;
@@ -323,7 +339,7 @@ footer nav ul {
 	height: 100vh;
 	transition: visibility 0.4s;
   }
-  .modal-container.active {
+  .modalContainer.active {
 	visibility: visible;
   }
   
@@ -335,7 +351,7 @@ footer nav ul {
 	background: #333333d3;
 	transition: opacity 0.4s 0.2s ease-out;
   }
-  .modal-container.active .overlay {
+  .modalContainer.active .overlay {
 	opacity: 1;
 	transition: opacity 0.4s ease-out;
   }
@@ -366,7 +382,7 @@ footer nav ul {
 	font-size: 26px;
 	margin-bottom: 30px;
   }
-  .modal-container.active .modal {
+  .modalContainer.active .modal {
 	opacity: 1;
 	transform: translate(-50%, -50%);
 	transition: opacity 0.4s 0.2s ease-out,
@@ -378,7 +394,7 @@ footer nav ul {
 #uploadButton {
 	background: #A7A7A7;
 }
-  .close-modal {
+.closeModalBtnStyle {
 	padding: 12px 20px;
 	font-size: 20px;
 	border: none;
@@ -388,13 +404,13 @@ footer nav ul {
 	background: none;
 	cursor: pointer;
 	color: #000000;
-  }
-  hr {
+}
+hr {
 	width: 100%;
 	margin-top: 30px;
 	border: 1px solid #B3B3B3
-  }
-  .modalSupp {
+}
+.modalSupp {
 	font-family: syne;
 	color: #D65353;
 	border: none;
@@ -437,7 +453,11 @@ footer nav ul {
 	font-size: large;
 	cursor: pointer;
 }
-  .custom-file-upload {
+#uploadButton:hover {
+	color: #FFFFFF;
+	background-color: #0E2F28;
+}
+.fileUpload {
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 50px;
@@ -446,19 +466,19 @@ footer nav ul {
 	text-align: center;
 	margin: 21px 0 7px 0;
 	padding: 10px 0 10px 0;
-  }
-  .custom-file-upload span {
+}
+.fileUpload span {
 	color: #306685;
 	font-size: 14px;
-  }
+}
   
-  input[type="file"] {     /* Hide the default file input */
+input[type="file"] {     /* Hide the default file input */
 	display: none;
-  }
-  .file-info {
+}
+.fileInfo {
 	color: #444444;
 	font-size: 10px;
-  }
+}
   
 .fa-image {
 	color: #B9C5CC;
