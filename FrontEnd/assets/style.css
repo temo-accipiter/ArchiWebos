@@ -23,29 +23,36 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /** end reset css**/
 body {
 	max-width: 1140px;
@@ -53,6 +60,7 @@ body {
 	font-family: 'Work Sans' ;
 	font-size: 14px;
 }
+
 .headerBar {
 	display: flex;
 	justify-content: center;
@@ -60,14 +68,17 @@ body {
 	background-color: #000000;
 	height: 40px;
 }
+
 .headerBar i {
 	color: #FFFFFF;
 }
+
 .btnHeader1 {
 	color: #FFFFFF;
 	padding-left: 10px;
 	padding-right: 15px;
 }
+
 .btnHeader2 {
 	background-color: #FFFFFF;
 	border: none;
@@ -75,11 +86,13 @@ body {
 	padding: 6px 20px;
 	font: inherit
 }
+
 .headerContent {
 	display: flex;
 	justify-content: space-between;
 	margin: 40px 0 50px 0;
 }
+
 .headerContent li {
 	cursor: pointer;
 }
@@ -108,12 +121,14 @@ h2{
 	font-size: 30px;
 	color: #1D6154
 }
+
 nav ul {
 	display: flex;
 	align-items: center;
 	list-style-type: none;
 
 }
+
 nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
@@ -122,10 +137,12 @@ nav li {
 li:hover {
 	color: #B1663C;
 }
+
 nav li a {
 	text-decoration: none;
 	color: #000000;
 }
+
 .bold {
 	font-weight: 700;
 }
@@ -133,10 +150,12 @@ nav li a {
 	display: flex;
 	align-items: center;
 }
+
 #introduction figure {
 	position: relative;
 	flex: 1
 }
+
 #introduction img {
 	display: block;
 	margin: auto;
@@ -146,12 +165,15 @@ nav li a {
 #introduction article {
 	flex: 1
 }
+
 #introduction h2 {
 	margin-bottom: 1em;
 }
+
 #introduction p {
 	margin-bottom: 0.5em;
 }
+
 #portfolio h2 {
 	position: relative;
 	text-align: center;
@@ -162,20 +184,24 @@ nav li a {
 	top: 355px;
 	right: 424px;
 }
+
 .position {
 	position: absolute;
 	top: 570px;
 	right: 430px;
 }
+
 .edit {
 	display: flex;
 	width: 90px;
 	align-items: center;
 	justify-content: space-between;
 }
+
 .fa-pen-to-square {
 	font-size: 18px;
 }
+
 .btnModif {
 	background: none;
 	border: none;
@@ -183,6 +209,7 @@ nav li a {
 	font-size: inherit;
 	cursor: pointer;
 }
+
 .btn {
 	color: #1D6154; 
 	border-radius: 60px; 
@@ -195,9 +222,11 @@ nav li a {
 	z-index: 1;
 	cursor: pointer;
 }
+
 .btn:hover{
 	color: #FFFFFF;
 }
+
 .btn::after{
 	content: "";
 	position: absolute;
@@ -212,9 +241,11 @@ nav li a {
 	z-index: -1;
 	transition: opacity 250ms ease-out;
 }
+
 .btn:hover::after{
 	opacity: 1;
 }
+
 .gallery {
 	width: 100%;
 	display: grid;
@@ -226,6 +257,7 @@ nav li a {
 .gallery img {
 	width: 100%;
 }
+
 .modalGallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -233,10 +265,12 @@ nav li a {
 	overflow-y: auto; /* Add scrollbar for vertical overflow */
     max-height: 300px; /* Set a maximum height for the gallery */
 }
+
 .modalGallery img {
 	width: 110px;
 	height: 135px;
 }
+
 .filterButtons {
 	display: flex;
 	justify-content: space-between;
@@ -244,29 +278,36 @@ nav li a {
 	margin: auto;
 	margin-bottom: 40px;
 }
+
 .filterButtons :nth-child(1) {
 	width: 100px;
 }
+
 .filterButtons :nth-child(2) {
 	width: 100px;
 }
+
 .filterButtons :nth-child(3) {
 	width: 160px;
 }
+
 .filterButtons :nth-child(4) {
 	width: 190px;
 }
+
 #contact {
 	position: relative;
 	width: 50%;
 	margin: auto;
 }
+
 #contact > * {
 	text-align: center;
 }
 #contact h2{
 	margin-bottom: 20px;
 }
+
 #contact form {
 	text-align: left;
 	margin-top:30px;
@@ -285,6 +326,7 @@ nav li a {
 #contact label {
 	margin: 2em 0 1em 0;
 }
+
 #contact textarea {
 	border: none;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
@@ -303,9 +345,11 @@ input[type="submit"]{
 	border: none;
 	position: relative;
 }
+
 input[type="submit"]:hover{
 	background-color: #0E2F28;
 }
+
 #error-message {
 	display: none;
 	position: absolute;
@@ -323,14 +367,15 @@ input[type="submit"]:hover{
 	color: #3D3D3D;
 	margin-left: 38%;
 }
+
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
 	margin: 2em
 }
+
 /*********** MODAL **************/
-  
-  .modalContainer {
+.modalContainer {
 	visibility: hidden;
 	position: fixed;
 	top: 0;
@@ -338,25 +383,27 @@ footer nav ul {
 	width: 100vw;
 	height: 100vh;
 	transition: visibility 0.4s;
-  }
-  .modalContainer.active {
+}
+
+.modalContainer.active {
 	visibility: visible;
-  }
+}
   
-  .overlay {
+.overlay {
 	opacity: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background: #333333d3;
 	transition: opacity 0.4s 0.2s ease-out;
-  }
-  .modalContainer.active .overlay {
+}
+
+.modalContainer.active .overlay {
 	opacity: 1;
 	transition: opacity 0.4s ease-out;
-  }
+}
   
-  .modal {
+.modal {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -374,26 +421,29 @@ footer nav ul {
 	transform: translate(-50%, calc(-50% - 50px));
 	transition: opacity 0.4s ease-out,
 	transform 0.4s ease-out;
-  }
+}
   
-  .modalTitle {
+.modalTitle {
 	font-family: work sans;
 	color: #000000;
 	font-size: 26px;
 	margin-bottom: 30px;
-  }
-  .modalContainer.active .modal {
+}
+.modalContainer.active .modal {
 	opacity: 1;
 	transform: translate(-50%, -50%);
 	transition: opacity 0.4s 0.2s ease-out,
 	transform 0.4s 0.2s ease-out;
-  }
+}
+
 #modalBtn, #uploadButton {
 	width: 250px;
 }
+
 #uploadButton {
 	background: #A7A7A7;
 }
+
 .closeModalBtnStyle {
 	padding: 12px 20px;
 	font-size: 20px;
@@ -405,22 +455,26 @@ footer nav ul {
 	cursor: pointer;
 	color: #000000;
 }
+
 hr {
 	width: 100%;
 	margin-top: 30px;
 	border: 1px solid #B3B3B3
 }
+
 .modalSupp {
 	font-family: syne;
 	color: #D65353;
 	border: none;
 	background: none;
 	cursor: pointer;
-  }
+}
+
 .contactHomepage {
 	position: relative;
 	z-index: -1;
 }
+
 .iconTrash {
 	color:#FFFFFF;
 	background-color: #000000;
@@ -432,9 +486,11 @@ hr {
 	right: 5px;
 	cursor: pointer;
 }
+
 .figure {
 	position: relative;
 }
+
 .iconArrow {
 	color:#FFFFFF;
 	background-color: #000000;
@@ -446,6 +502,7 @@ hr {
 	right: 33px;
 	cursor: pointer;
 }
+
 .fa-arrow-left {
 	position: absolute;
 	top: -80px;
@@ -453,10 +510,12 @@ hr {
 	font-size: large;
 	cursor: pointer;
 }
+
 #uploadButton:hover {
 	color: #FFFFFF;
 	background-color: #0E2F28;
 }
+
 .fileUpload {
 	display: inline-block;
 	cursor: pointer;
@@ -467,6 +526,7 @@ hr {
 	margin: 21px 0 7px 0;
 	padding: 10px 0 10px 0;
 }
+
 .fileUpload span {
 	color: #306685;
 	font-size: 14px;
@@ -475,6 +535,7 @@ hr {
 input[type="file"] {     /* Hide the default file input */
 	display: none;
 }
+
 .fileInfo {
 	color: #444444;
 	font-size: 10px;
@@ -484,14 +545,17 @@ input[type="file"] {     /* Hide the default file input */
 	color: #B9C5CC;
 	font-size: 60px;
 }
+
 #addItemForm {
 	display: none;
 	width: 420px;
 	position: relative;
 }
+
 .hidden {
 	display: none;
 }
+
 #titleInput, #categorySelect {
 	height: 51px;
 	box-shadow: 0px 4px 14px 0px #00000017;
@@ -500,31 +564,71 @@ input[type="file"] {     /* Hide the default file input */
 	margin: 5px 0 20px 0;
 	width: 420px;
 }
+
 #categorySelect {
 	margin: 5px 0 20px 0;
 }
+
 .formTitle {
 	color: #3D3D3D;
 }
+
 .formPhoto {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 169px;
 	background: #E8F1F6;
 	border-radius: 10px;
 	margin-bottom: 30px;
+	position: relative;
 }
+
+.formData {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: 100%;
+	width: 173px;
+}
+
 .formPhoto label {
 	font-family: 'Work Sans';
 	font-size: 10px;
 	color: #444444;
 }
-.chosenImg {
-	max-width: 173px;
+
+.chosenImgBlock {
+	background: #E8F1F6;
+	width: 174px;
 	height: 169px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
 }
+
+.chosenImg {
+	display: block;
+	margin: auto;
+	width: 140px;
+	height: 100%;
+}
+
+
 #uploadButton {
 	display: none;
+}
+
+#modalMessage {
+	display: none;
+	position: absolute;
+	top: 172px;
+	right: 118px;
+	z-index: 1;
+	border: 2px solid grey;
+	padding: 10px;
+	box-shadow: 12px 9px 18px -5px rgba(0,0,0,0.56);
+	border-radius: 10px;
+	color:red;
 }

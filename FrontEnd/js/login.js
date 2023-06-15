@@ -1,10 +1,14 @@
+//----------------------------------------------------------------
+//*************************** Login ******************************
+//----------------------------------------------------------------
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
   e.preventDefault();   // Prevent the default form submission
 
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-
-  const data = {email, password};   
+  //const email = e.target.email.value;
+  //const password = e.target.password.value;
+  //const data = {email, password};   
+  const { email, password } = e.target.elements;
+  const data = { email: email.value, password: password.value }; 
 
   try {
     const response = await fetch('http://localhost:5678/api/users/login', {
@@ -22,21 +26,19 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
       window.location.href = 'index.html';   // Login successful, redirect to homepage
       console.log(responseData);
     } else {
-      throw new Error('Échec de la connexion');   // Connection failed, handle error here
-    }
-  } catch (error) {
+      throw new Error('');   // Connection failed, handle error here
+    } 
+  } catch {
     displayErrorMessage();   // Display an error message if there is an error with the request
-    clearInputFields();
+    e.target.reset();
   }
 });
 
-function displayErrorMessage() {   // Alert a user in case of wrong login data 
+//----------------------------------------------------------------
+//********* Alert a user in case of wrong login data *************
+//----------------------------------------------------------------
+function displayErrorMessage() {    
   const errorMessage = document.getElementById('error-message');
   errorMessage.textContent = 'Erreur dans l’identifiant ou le mot de passe';
   errorMessage.style.display = 'block';
-}
-
-function clearInputFields() {   // If  entered login data is wrong, clear the fields after submit
-  document.getElementById('email').value = '';
-  document.getElementById('password').value = '';
 }

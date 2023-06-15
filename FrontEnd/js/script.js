@@ -14,7 +14,7 @@ async function fetchData() {   // fetch data asynchronously from the Swagger API
   } catch (error) {
     console.error('Error:', error);
   }
-};
+}
 
 //----------------------------------------------------------------
 //**************** Button 'Tous' ******************
@@ -82,4 +82,4 @@ document.getElementById('logout').addEventListener('click', () => {
   }
 })();
 
-fetchData();   // Fetch data from the API endpoint*/
+fetchData();   // Fetch data from the API endpoint
